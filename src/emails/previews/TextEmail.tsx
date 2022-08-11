@@ -1,5 +1,5 @@
-import TextEmail from "../TextEmail";
 import BulletedList from "../components/BulletedList";
+import TextEmail from "../TextEmail";
 
 export function resetPassword() {
   return (
@@ -21,7 +21,7 @@ export function resetPassword() {
 export function accountDeleted() {
   return (
     <TextEmail
-      name="Amelita"
+      name="Diego"
       body={
         <>
           We’ve received your request to delete your account and your account
