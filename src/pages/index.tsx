@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import { signIn, signOut, useSession } from "next-auth/react";
 import Head from "next/head";
 import Image from "next/image";
+import Header from "../components/Base/Header";
 import Navbar from "../components/Base/Navbar";
 
 const Home: NextPage = () => {
@@ -18,7 +19,7 @@ const Home: NextPage = () => {
   return (
     <>
     <Navbar/>
-      <div>No estas logeado</div>
+    <Header/>
     </>
   );
 };

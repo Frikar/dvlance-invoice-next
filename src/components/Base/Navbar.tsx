@@ -36,7 +36,10 @@ const Navbar = () => {
               Sign out
             </button>
           ) : (
-            <button className="btn btn-primary" onClick={() => signIn()}>
+            <button
+              className="btn btn-primary"
+              onClick={() => signIn(undefined, { callbackUrl: "/dashboard" })}
+            >
               Sign in
             </button>
           )}
